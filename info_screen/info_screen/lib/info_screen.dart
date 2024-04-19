@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:info_screen/globs.dart';
 
 class InfoScreen extends StatelessWidget {
@@ -24,8 +25,19 @@ class InfoScreen extends StatelessWidget {
             backgroundColor: Colors.transparent,
             floating: true,
             actions: [
+              GestureDetector(
+                onTap: () {},
+                child: Image.asset('assets/logout.png'),
+              ),
+              SizedBox(
+                width: 8,
+              ),
+              GestureDetector(
+                onTap: () {},
+                child: Image.asset('assets/img.png'),
+              ),
               Padding(
-                padding: const EdgeInsets.only(right: 8.0),
+                padding: const EdgeInsets.only(right: 0),
                 child: Image.asset('assets/pfp.png'),
               ),
             ],
